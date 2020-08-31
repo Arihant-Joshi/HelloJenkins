@@ -5,9 +5,9 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                	echo "This is a console message"
-                	python --version
+                	python Hi.py
                 '''
+                println "Build Step Complete"
             }
         }
     }
