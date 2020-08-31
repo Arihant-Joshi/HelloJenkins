@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                	python hi.py > output.txt
+                	python ./hi.py > output.txt
                 '''
                 println "Build Step Complete"
             }
